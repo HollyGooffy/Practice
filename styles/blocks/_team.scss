@@ -1,0 +1,20 @@
+@use '../helpers' as *;
+
+.team{
+  display: flex;
+  padding: rem(10);
+  background-color: var(--color-dark-10);
+  border-radius: rem(100);
+  --person-image-size: #{rem(60)};
+
+  &__person{
+    width: var(--person-image-size);
+    background-color: var(--color-dark-15);
+    border-radius: 50%;
+    border: rem(2) solid var(--color-dark-40);
+
+    &:not(:first-child){
+      margin-left: calc(var(--person-image-size) / 4 * -1);
+    }
+  }
+}
