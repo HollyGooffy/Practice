@@ -19,10 +19,18 @@
 @use './blocks/advantage-card';
 @use './blocks/resources-preview';
 
+@use './blocks/card';
+@use './blocks/list';
+@use './blocks/section';
+@use './blocks/tag';
+@use './blocks/tile';
 
 
-//.header, .footer{
-//  display: none !important;
-//}
-//
+
+.header,
+main > *:not(:last-child)
+,.footer{
+  display: none !important;
+}
+
 
